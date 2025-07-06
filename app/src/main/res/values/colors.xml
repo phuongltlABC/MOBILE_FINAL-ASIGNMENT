@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    //primary color 1//
+    <color name="primary_1_100">#52677D</color>
+    <color name="primary_1_80">#CC52677D</color>
+    <color name="primary_1_60">#9952677D</color>
+    <color name="primary_1_40">#6652677D</color>
+    <color name="primary_1_20">#3352677D</color>
+    <color name="primary_1_10">#1A52677D</color>
+    //primary color 2//
+    <color name="primary_2_100">#FBEEE6</color>
+    <color name="primary_2_80">#CCFBEEE6</color>
+    <color name="primary_2_60">#99FBEEE6</color>
+    <color name="primary_2_40">#66FBEEE6</color>
+    <color name="primary_2_20">#33FBEEE6</color>
+    <color name="primary_2_10">#1AFBEEE6</color>
+    // accent color 1//
+    <color name="accent_1_100">#1C2E4A</color>
+    <color name="accent_1_80">#CC1C2E4A</color>
+    <color name="accent_1_60">#991C2E4A</color>
+    <color name="accent_1_40">#661C2E4A</color>
+    <color name="accent_1_20">#331C2E4A</color>
+    <color name="accent_1_10">#1A1C2E4A</color>
+    // accent color 2//
+    <color name="accent_2_100">#BDC4D4</color>
+    <color name="accent_2_80">#CCBDC4D4</color>
+    <color name="accent_2_60">#99BDC4D4</color>
+    <color name="accent_2_40">#66BDC4D4</color>
+    <color name="accent_2_20">#33BDC4D4</color>
+    <color name="accent_2_10">#1ABDC4D4</color>
+    // accent color 3//
+    <color name="accent_3_100">#FFF5EF</color>
+    <color name="accent_3_80">#CCFFF5EF</color>
+    <color name="accent_3_60">#99FFF5EF</color>
+    <color name="accent_3_40">#66FFF5EF</color>
+    <color name="accent_3_20">#33FFF5EF</color>
+    <color name="accent_3_10">#1AFFF5EF</color>
+    // senamatic //
+    <color name="senamatic_1_100">#FA7979</color>
+    <color name="senamatic_2_100">#FFD65B</color>
+    <color name="senamtic_3_100">#3B8C37</color>
+    //neutral
+    <color name="neutral_1_100">#FF000000</color>
+    <color name="neutral_1_80">#CC000000</color>
+    <color name="neutral_1_60">#99000000</color>
+    <color name="neutral_1_40">#66000000</color>
+    <color name="neutral_1_20">#33000000</color>
+    <color name="neutral_1_10">#1A000000</color>
+</resources>

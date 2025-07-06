@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Tiêu đề chính -->
+    <style name="TextAppearance.Lexend.H1" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Tiêu đề phụ -->
+    <style name="TextAppearance.Lexend.H2" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <!-- Tiêu đề nhỏ -->
+    <style name="TextAppearance.Lexend.H3" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Nội dung (body) -->
+    <style name="TextAppearance.Lexend.Body" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Giá sản phẩm -->
+    <style name="TextAppearance.Lexend.Price" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Button -->
+    <style name="TextAppearance.Lexend.Button" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Caption/Subtext -->
+    <style name="TextAppearance.Lexend.Caption" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
