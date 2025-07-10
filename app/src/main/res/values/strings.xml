@@ -5,4 +5,8 @@
     <string name="splash_art">Splash art</string>
     <string name="skip">Skip</string>
     <string name="get_started">Get started</string>
+    <string name="welcome">Welcome Back!</string>
+    <string name="phone">Phone number</string>
+    <string name="pass">Password</string>
+    <string name="sign_in">Sign in</string>
 </resources>

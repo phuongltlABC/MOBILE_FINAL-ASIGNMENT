@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_2_100"
+    android:padding="16dp"
+    tools:context=".Sign_in">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:text="@string/welcome"
+        android:textAppearance="@style/TextAppearance.Lexend.H2"
+        android:textColor="@color/accent_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Enter your email to start shopping and get awesome deals today!"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/pass"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword">
+
+        <CheckBox
+            android:id="@+id/checkRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Remember me"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/primary_1_100"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_semi_bold"
+            android:text="Forgot password?"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/senamatic_1_100"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/primary_1_100"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/TextAppearance.Lexend.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignin">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/lexend_regular"
+            android:text="OR"
+            android:textAppearance="@style/TextAppearance.Lexend.Body"
+            android:textColor="@color/primary_1_60"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+        <ImageView
+            android:id="@+id/linkFace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/linkGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/apple" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear3">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:text="Don’t have an account?"
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/primary_1_100"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_semi_bold"
+            android:paddingStart="6dp"
+            android:text="Sign up"
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/senamatic_1_100" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/lexend_regular"
+        android:gravity="center_vertical"
+        android:text="@string/skip"
+        android:textColor="@color/primary_1_100"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
