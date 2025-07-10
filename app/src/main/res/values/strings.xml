@@ -9,4 +9,6 @@
     <string name="phone">Phone number</string>
     <string name="pass">Password</string>
     <string name="sign_in">Sign in</string>
+    <string name="categories">Categories</string>
+    <string name="see_all">See all</string>
 </resources>
