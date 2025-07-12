@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.myassignmentproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    public static int SPLASH_TIMER = 800;
+    public static int SPLASH_TIMER = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
