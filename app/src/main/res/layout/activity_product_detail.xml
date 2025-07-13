@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/accent_3_100">
 
     <LinearLayout
         android:orientation="vertical"
@@ -12,31 +14,75 @@
         <ImageView
             android:id="@+id/imgProduct"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop" />
-
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/produ_lamp"/>
         <TextView
             android:id="@+id/txtProductName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
+            android:textAppearance="@style/TextAppearance.Lexend.Body"
+            android:textColor="@color/primary_1_80"
+            android:fontFamily="@font/lexend_bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:text="Sản phẩm 1"
+            android:textSize="24sp"
 
+            />
         <TextView
             android:id="@+id/txtPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
-            android:layout_marginTop="5dp" />
-
+            android:textAppearance="@style/TextAppearance.Lexend.Price"
+            android:textColor="@color/accent_1_100"
+            android:fontFamily="@font/lexend_bold"
+            android:layout_marginTop="5dp"
+            android:text="19.000 VND"
+            android:textSize="32sp"
+            />
         <TextView
             android:id="@+id/txtDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp" />
-
+            android:textSize="20sp"
+            android:textColor="@color/primary_1_100"
+            android:textAppearance="@style/TextAppearance.Lexend.Body"
+            />
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/primary_1_100"
+            android:textAppearance="@style/TextAppearance.Lexend.Button"
+            android:text="Add to cart"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_1_100"
+            android:textAppearance="@style/TextAppearance.Lexend.Button"
+            android:text="Buy now"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:id="@+id/btnReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textAppearance="@style/TextAppearance.Lexend.Button"
+            android:text="See Reviews"
+            android:layout_gravity="center"
+            android:textColor="@color/primary_1_100"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
     </LinearLayout>
 </ScrollView>
