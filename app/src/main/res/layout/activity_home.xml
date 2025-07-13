@@ -9,55 +9,50 @@
     android:padding="16dp"
     tools:context=".HomeActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/top_bar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="24dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="92dp"
-            android:layout_height="44dp"
-            android:src="@drawable/primary_logo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/icCart"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/cart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/nested_scroll"
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_bar">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
-            android:id="@+id/scroll_container"
+            android:id="@+id/scrollContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="16dp">
-
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/imvLogo"
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:src="@drawable/primary_logo"
+                android:layout_gravity="end"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/imvCart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/cart"/>
+            </LinearLayout>
             <androidx.cardview.widget.CardView
-                android:id="@+id/search_card"
+                android:id="@+id/searchCard"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="20dp"
@@ -79,16 +74,17 @@
                         android:src="@drawable/search" />
 
                     <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="0dp"
+                        android:id="@+id/txtSearch"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="8dp"
-                        android:fontFamily="@font/lexend_light"
-                        android:text="What are you looking for?"
+                        android:layout_marginStart="5dp"
+                        android:hint="What are you looking for?"
                         android:textAppearance="@style/TextAppearance.Lexend.Body"
                         android:textColor="@color/primary_1_100"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        />
 
                     <ImageView
                         android:layout_width="24dp"
@@ -102,11 +98,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/page_1" />
 
             <TextView
-                android:id="@+id/categories_title"
+                android:id="@+id/txtCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -118,7 +114,7 @@
                 android:textStyle="bold" />
 
             <HorizontalScrollView
-                android:id="@+id/category_scroll"
+                android:id="@+id/scrollCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none">
@@ -129,6 +125,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
+                        android:id="@+id/imvChair"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -142,7 +139,6 @@
                             android:padding="8dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/chair" />
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -155,6 +151,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvTable"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -181,6 +178,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvBed"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -207,6 +205,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvCloset"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -233,6 +232,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvCurtain"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -259,6 +259,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvVase"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -285,6 +286,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvLight"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -311,6 +313,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/imvDecor"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -337,13 +340,12 @@
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
             <ImageView
                 android:id="@+id/imvPromo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/promo_banner" />
 
             <LinearLayout
@@ -613,9 +615,100 @@
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
+
             </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tltRoom"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_semi_bold"
+                    android:text="Room"
+                    android:textAppearance="@style/TextAppearance.Lexend.Price"
+                    android:textColor="@color/accent_1_100"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                <HorizontalScrollView
+                    android:id="@+id/scrollRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/room_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imvLivingR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/living"
+                        android:layout_marginEnd="8dp"
+                        />
+                        <ImageView
+                            android:id="@+id/imvBedroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bedroom"
+                            android:layout_marginEnd="8dp"
+                            />
+                    <ImageView
+                        android:id="@+id/imvKitchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kitchen"
+                        android:layout_marginEnd="8dp"
+                        />
+                        <ImageView
+                            android:id="@+id/imvBathroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bathroom"
+                            android:layout_marginEnd="8dp"
+                            />
+                        <ImageView
+                            android:id="@+id/imvOffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/office"
+                            android:layout_marginEnd="8dp"
+                            />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBar"
+        android:background="@drawable/bottom_nav_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation_bar"
+        app:labelVisibilityMode="unlabeled"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

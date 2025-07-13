@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primary_2_100"
+    tools:context=".CatalogFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture list"
+            android:fontFamily="@font/lexend_semi_bold"
+            android:textAppearance="@style/TextAppearance.Lexend.H3"
+            android:textColor="@color/accent_1_100"
+            android:layout_gravity="end"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/imvSearch"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/search"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:id="@+id/imvCart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/cart"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:backgroundTint="@color/accent_3_100"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        />
+
+</LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnHome"
+        android:icon="@drawable/navigation_home"
+        android:title="Home" />
+    <item android:id="@+id/mnCatalog"
+        android:title="Catalog"
+        android:icon="@drawable/navigation_catalog"/>
+    <item android:id="@+id/mnPromo"
+        android:title="Promotion"
+        android:icon="@drawable/navigation_promo"/>
+    <item android:id="@+id/mnNoti"
+        android:title="Notification"
+        android:icon="@drawable/navigation_noti"/>
+    <item android:id="@+id/mnProfile"
+        android:title="Profile"
+        android:icon="@drawable/navigation_user"/>
+</menu>

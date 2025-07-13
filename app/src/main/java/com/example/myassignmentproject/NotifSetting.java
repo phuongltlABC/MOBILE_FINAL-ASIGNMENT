@@ -8,12 +8,19 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SearchActivity extends AppCompatActivity {
+import com.example.myassignmentproject.databinding.ActivityNotifSettingBinding;
 
+public class NotifSetting extends AppCompatActivity {
+    ActivityNotifSettingBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_search);
+        binding = ActivityNotifSettingBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        addEvents();
+    }
+
+    private void addEvents() {
+
     }
 }

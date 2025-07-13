@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+    android:gravity="center"
+                android:background="@drawable/custom_dialog_bg">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_check"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:text="Account created successfully!"
+        android:textAppearance="@style/TextAppearance.Lexend.H2"
+        android:textColor="@color/accent_1_100"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account has been created. Please sign in to get started."
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_1_100"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:textAppearance="@style/TextAppearance.Lexend.Button"
+        android:text="Sign in"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

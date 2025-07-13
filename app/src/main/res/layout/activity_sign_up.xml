@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_2_100"
+    android:padding="16dp"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:text="Create Account"
+        android:textAppearance="@style/TextAppearance.Lexend.H2"
+        android:textColor="@color/accent_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Fill in your details below to get started on a seamless shopping experience."
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/edtName"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/edit"
+        android:drawableEnd="@drawable/must_fill_icon"
+        android:drawablePadding="12dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/phone"
+        android:drawableEnd="@drawable/must_fill_icon"
+        android:drawablePadding="12dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtName" />
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="12dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPhone" />
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/TextAppearance.Lexend.Body"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableStart="@drawable/pass"
+        android:drawableEnd="@drawable/must_fill_icon"
+        android:drawablePadding="12dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:fontFamily="@font/lexend_regular"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.Lexend.Body"
+        android:textColor="@color/primary_1_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_regular"
+            android:text="By clicking Create Account, you acknowledge you have read and agreed to our "
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/primary_1_100"
+            tools:ignore="HardcodedText"
+            />
+
+        <TextView
+            android:id="@+id/txtResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_semi_bold"
+            android:text=" Privacy and Security Policy"
+            android:textAppearance="@style/TextAppearance.Lexend.Caption"
+            android:textColor="@color/senamatic_1_100" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/primary_1_100"
+        android:fontFamily="@font/lexend_semi_bold"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.Lexend.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignin">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/primary_1_60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/lexend_regular"
+            android:text="OR"
+            android:textAppearance="@style/TextAppearance.Lexend.Body"
+            android:textColor="@color/primary_1_60"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/primary_1_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+        <ImageView
+            android:id="@+id/linkFace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/linkGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/link_bg"
+            app:srcCompat="@drawable/apple" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

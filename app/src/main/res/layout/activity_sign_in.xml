@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
-        android:text="Enter your email to start shopping and get awesome deals today!"
+        android:text="Create your account to start shopping and get awesome deals today!"
         android:textAppearance="@style/TextAppearance.Lexend.Body"
         android:textColor="@color/primary_1_100"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/editPhone"
+        android:id="@+id/edtPhone"
         style="@style/TextAppearance.Lexend.Body"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/edtPassword"
         style="@style/TextAppearance.Lexend.Body"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -71,8 +71,14 @@
         android:textAppearance="@style/TextAppearance.Lexend.Body"
         android:textColor="@color/primary_1_100"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        />
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
@@ -81,7 +87,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword">
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword">
 
         <CheckBox
             android:id="@+id/checkRemember"
